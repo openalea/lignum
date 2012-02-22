@@ -1,0 +1,602 @@
+<!DOCTYPE LMODEL>
+<Tree SegmentType="Cf">
+ <TreeAttributes>
+  <point>0 0 0</point>
+  <direction>0 0 1</direction>
+  <LGAage>1</LGAage>
+  <LGAH>0.478426</LGAH>
+  <LGADbase>0.00913732</LGADbase>
+  <LGADbaseHw>0.00513079</LGADbaseHw>
+  <LGADbh>0</LGADbh>
+  <LGADbhHw>0</LGADbhHw>
+ </TreeAttributes>
+ <TreeParameters>
+  <LGPaf>2</LGPaf>
+  <LGPaleafmax>0</LGPaleafmax>
+  <LGPapical>0.9</LGPapical>
+  <LGPar>0.5</LGPar>
+  <LGPdof>0</LGPdof>
+  <LGPLmin>0.02</LGPLmin>
+  <LGPlr>0.01</LGPlr>
+  <LGPmf>0.24</LGPmf>
+  <LGPmr>0.24</LGPmr>
+  <LGPms>0.024</LGPms>
+  <LGPna>0.7854</LGPna>
+  <LGPnl>0.03</LGPnl>
+  <LGPpr>0.0006</LGPpr>
+  <LGPq>0.1</LGPq>
+  <LGPrhoW>200</LGPrhoW>
+  <LGPrho_root>0</LGPrho_root>
+  <LGPrho_hair>0</LGPrho_hair>
+  <LGPsf>28</LGPsf>
+  <LGPsr>1.33</LGPsr>
+  <LGPss>0.57</LGPss>
+  <LGPtauL>0</LGPtauL>
+  <LGPxi>0.6</LGPxi>
+  <LGPyc>0</LGPyc>
+  <LGPzbrentEpsilon>0.01</LGPzbrentEpsilon>
+ </TreeParameters>
+ <TreeFunctions>
+  <LGMFM>fm.fun</LGMFM>
+  <LGMIP>fip.fun</LGMIP>
+  <LGMVI>fvigorindex.fun</LGMVI>
+ </TreeFunctions>
+ <Axis>
+  <AxisAttributes>
+   <point>0 0 0</point>
+   <direction>0 0 1</direction>
+   <LGAstate>1</LGAstate>
+   <LGAL>0.478426</LGAL>
+   <LGAWf>0.0126463</LGAWf>
+  </AxisAttributes>
+  <TreeSegment ObjectIndex="0">
+   <TreeSegmentAttributes>
+    <point>0 0 0</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.3</LGAL>
+    <LGAR>0.00456866</LGAR>
+    <LGARh>0.00256539</LGARh>
+    <LGAage>1</LGAage>
+    <LGAM>0.00273508</LGAM>
+    <LGARTop>0</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00269387</LGAWs>
+    <LGAWh>0.00124054</LGAWh>
+    <LGAHf>0.0212132</LGAHf>
+    <LGAP>0.01345</LGAP>
+    <LGAQin>1971.3</LGAQin>
+    <LGAQabs>22.4166</LGAQabs>
+    <LGARf>0.0257819</LGARf>
+    <LGAstarm>0.14</LGAstarm>
+    <LGAVf>0.000606799</LGAVf>
+    <LGAWf>0.0110835</LGAWf>
+    <LGAWf0>0.0113097</LGAWf0>
+    <LGAsf>32</LGAsf>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.3</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>0</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.3</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.124898</LGAL>
+     <LGAWf>0.000765748</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="1">
+     <TreeSegmentAttributes>
+      <point>0 0 0.3</point>
+      <direction>0 -0.75471 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.124898</LGAL>
+      <LGAR>0.00147845</LGAR>
+      <LGARh>0.0011452</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>6.86132e-05</LGAWs>
+      <LGAWh>0.00010292</LGAWh>
+      <LGAHf>0.0131593</LGAHf>
+      <LGAP>0</LGAP>
+      <LGAQin>1971.3</LGAQin>
+      <LGAQabs>0</LGAQabs>
+      <LGARf>0.0146377</LGARf>
+      <LGAstarm>0</LGAstarm>
+      <LGAVf>8.32148e-05</LGAVf>
+      <LGAWf>0.000765748</LGAWf>
+      <LGAWf0>0.000765748</LGAWf0>
+      <LGAsf>22.4069</LGAsf>
+     </TreeSegmentAttributes>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0 -0.0942618 0.381941</point>
+      <direction>0 -0.75471 0.656059</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0 -0.0942618 0.381941</point>
+       <direction>0 -0.75471 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="2">
+       <BudAttributes>
+        <point>0 -0.0942618 0.381941</point>
+        <direction>-0.368639 -0.431984 0.823101</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0 -0.0942618 0.381941</point>
+       <direction>0 -0.75471 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="3">
+       <BudAttributes>
+        <point>0 -0.0942618 0.381941</point>
+        <direction>0.0435779 -0.980379 0.192245</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="4">
+     <BudAttributes>
+      <point>0 -0.0942618 0.381941</point>
+      <direction>0 -0.75471 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0.959307</LGAip>
+      <LGAQin>1971.3</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.3</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.124898</LGAL>
+     <LGAWf>0.000765748</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="5">
+     <TreeSegmentAttributes>
+      <point>0 0 0.3</point>
+      <direction>0.75471 -4.62126e-17 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.124898</LGAL>
+      <LGAR>0.00147845</LGAR>
+      <LGARh>0.0011452</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>6.86132e-05</LGAWs>
+      <LGAWh>0.00010292</LGAWh>
+      <LGAHf>0.0131593</LGAHf>
+      <LGAP>0</LGAP>
+      <LGAQin>1971.3</LGAQin>
+      <LGAQabs>0</LGAQabs>
+      <LGARf>0.0146377</LGARf>
+      <LGAstarm>0</LGAstarm>
+      <LGAVf>8.32148e-05</LGAVf>
+      <LGAWf>0.000765748</LGAWf>
+      <LGAWf0>0.000765748</LGAWf0>
+      <LGAsf>22.4069</LGAsf>
+     </TreeSegmentAttributes>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.0942618 -5.77187e-18 0.381941</point>
+      <direction>0.75471 -4.62126e-17 0.656059</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0942618 -5.77187e-18 0.381941</point>
+       <direction>0.75471 -4.62126e-17 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="6">
+       <BudAttributes>
+        <point>0.0942618 -5.77187e-18 0.381941</point>
+        <direction>0.431984 -0.368639 0.823101</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0942618 -5.77187e-18 0.381941</point>
+       <direction>0.75471 -4.62126e-17 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="7">
+       <BudAttributes>
+        <point>0.0942618 -5.77187e-18 0.381941</point>
+        <direction>0.980379 0.0435779 0.192245</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="8">
+     <BudAttributes>
+      <point>0.0942618 -5.77187e-18 0.381941</point>
+      <direction>0.75471 -4.62126e-17 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0.959307</LGAip>
+      <LGAQin>1971.3</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.3</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.124898</LGAL>
+     <LGAWf>0.000765748</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="9">
+     <TreeSegmentAttributes>
+      <point>0 0 0.3</point>
+      <direction>9.24253e-17 0.75471 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.124898</LGAL>
+      <LGAR>0.00147845</LGAR>
+      <LGARh>0.0011452</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>6.86132e-05</LGAWs>
+      <LGAWh>0.00010292</LGAWh>
+      <LGAHf>0.0131593</LGAHf>
+      <LGAP>0</LGAP>
+      <LGAQin>1971.3</LGAQin>
+      <LGAQabs>0</LGAQabs>
+      <LGARf>0.0146377</LGARf>
+      <LGAstarm>0</LGAstarm>
+      <LGAVf>8.32148e-05</LGAVf>
+      <LGAWf>0.000765748</LGAWf>
+      <LGAWf0>0.000765748</LGAWf0>
+      <LGAsf>22.4069</LGAsf>
+     </TreeSegmentAttributes>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>1.15437e-17 0.0942618 0.381941</point>
+      <direction>9.24253e-17 0.75471 0.656059</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>1.15437e-17 0.0942618 0.381941</point>
+       <direction>9.24253e-17 0.75471 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="10">
+       <BudAttributes>
+        <point>1.15437e-17 0.0942618 0.381941</point>
+        <direction>0.368639 0.431984 0.823101</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>1.15437e-17 0.0942618 0.381941</point>
+       <direction>9.24253e-17 0.75471 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="11">
+       <BudAttributes>
+        <point>1.15437e-17 0.0942618 0.381941</point>
+        <direction>-0.0435779 0.980379 0.192245</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="12">
+     <BudAttributes>
+      <point>1.15437e-17 0.0942618 0.381941</point>
+      <direction>9.24253e-17 0.75471 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0.959307</LGAip>
+      <LGAQin>1971.3</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.3</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.124898</LGAL>
+     <LGAWf>0.000765748</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="13">
+     <TreeSegmentAttributes>
+      <point>0 0 0.3</point>
+      <direction>-0.75471 1.38638e-16 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.124898</LGAL>
+      <LGAR>0.00147845</LGAR>
+      <LGARh>0.0011452</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>6.86132e-05</LGAWs>
+      <LGAWh>0.00010292</LGAWh>
+      <LGAHf>0.0131593</LGAHf>
+      <LGAP>0</LGAP>
+      <LGAQin>1971.3</LGAQin>
+      <LGAQabs>0</LGAQabs>
+      <LGARf>0.0146377</LGARf>
+      <LGAstarm>0</LGAstarm>
+      <LGAVf>8.32148e-05</LGAVf>
+      <LGAWf>0.000765748</LGAWf>
+      <LGAWf0>0.000765748</LGAWf0>
+      <LGAsf>22.4069</LGAsf>
+     </TreeSegmentAttributes>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.0942618 1.73156e-17 0.381941</point>
+      <direction>-0.75471 1.38638e-16 0.656059</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0942618 1.73156e-17 0.381941</point>
+       <direction>-0.75471 1.38638e-16 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="14">
+       <BudAttributes>
+        <point>-0.0942618 1.73156e-17 0.381941</point>
+        <direction>-0.431984 0.368639 0.823101</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0942618 1.73156e-17 0.381941</point>
+       <direction>-0.75471 1.38638e-16 0.656059</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="15">
+       <BudAttributes>
+        <point>-0.0942618 1.73156e-17 0.381941</point>
+        <direction>-0.980379 -0.0435779 0.192245</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0.959307</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="16">
+     <BudAttributes>
+      <point>-0.0942618 1.73156e-17 0.381941</point>
+      <direction>-0.75471 1.38638e-16 0.656059</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0.959307</LGAip>
+      <LGAQin>1971.3</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="17">
+   <TreeSegmentAttributes>
+    <point>0 0 0.3</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.178426</LGAL>
+    <LGAR>0.00211207</LGAR>
+    <LGARh>0.001636</LGARh>
+    <LGAage>0</LGAage>
+    <LGAM>0</LGAM>
+    <LGARTop>0</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.000200039</LGAWs>
+    <LGAWh>0.000300058</LGAWh>
+    <LGAHf>0.0131593</LGAHf>
+    <LGAP>0</LGAP>
+    <LGAQin>1971.3</LGAQin>
+    <LGAQabs>0</LGAQabs>
+    <LGARf>0.0152714</LGARf>
+    <LGAstarm>0</LGAstarm>
+    <LGAVf>0.000128226</LGAVf>
+    <LGAWf>0.00156275</LGAWf>
+    <LGAWf0>0.00156275</LGAWf0>
+    <LGAsf>22.4069</LGAsf>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.478426</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>0</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.478426</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="18">
+     <BudAttributes>
+      <point>0 0 0.478426</point>
+      <direction>0.477714 0.521334 0.707107</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0.959307</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.478426</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="19">
+     <BudAttributes>
+      <point>0 0 0.478426</point>
+      <direction>-0.477714 -0.521334 0.707107</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0.959307</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <Bud ObjectIndex="20">
+   <BudAttributes>
+    <point>0 0 0.478426</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAcollision>0</LGAcollision>
+    <LGAip>0.959307</LGAip>
+    <LGAQin>1971.3</LGAQin>
+    <LGAstatus>0</LGAstatus>
+    <LGAstate>1</LGAstate>
+    <LGAtype>0</LGAtype>
+   </BudAttributes>
+  </Bud>
+ </Axis>
+</Tree>

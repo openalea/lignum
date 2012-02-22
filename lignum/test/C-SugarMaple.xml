@@ -1,0 +1,2434 @@
+<!DOCTYPE LMODEL>
+<Tree SegmentType="Hw" LeafType="Ellipse">
+ <TreeAttributes>
+  <point>0 0 0</point>
+  <direction>0 0 1</direction>
+  <LGAage>2</LGAage>
+  <LGAH>1.09165</LGAH>
+  <LGADbase>0.0148557</LGADbase>
+  <LGADbaseHw>0.00138749</LGADbaseHw>
+  <LGADbh>0</LGADbh>
+  <LGADbhHw>0</LGADbhHw>
+ </TreeAttributes>
+ <TreeParameters>
+  <LGPaf>0</LGPaf>
+  <LGPaleafmax>0.015</LGPaleafmax>
+  <LGPapical>6.95323e-310</LGPapical>
+  <LGPar>0.9</LGPar>
+  <LGPdof>0.8</LGPdof>
+  <LGPLmin>6.95323e-310</LGPLmin>
+  <LGPlr>0.01</LGPlr>
+  <LGPmf>1.98</LGPmf>
+  <LGPmr>0.76</LGPmr>
+  <LGPms>0.024</LGPms>
+  <LGPna>0</LGPna>
+  <LGPnl>0</LGPnl>
+  <LGPpr>0.00185</LGPpr>
+  <LGPq>0</LGPq>
+  <LGPrhoW>450</LGPrhoW>
+  <LGPrho_root>0</LGPrho_root>
+  <LGPrho_hair>0</LGPrho_hair>
+  <LGPsf>50</LGPsf>
+  <LGPsr>0.33</LGPsr>
+  <LGPss>0.05</LGPss>
+  <LGPtauL>0.06</LGPtauL>
+  <LGPxi>0</LGPxi>
+  <LGPyc>40</LGPyc>
+  <LGPzbrentEpsilon>0.0001</LGPzbrentEpsilon>
+ </TreeParameters>
+ <TreeFunctions>
+  <LGMIP>fip.fun</LGMIP>
+ </TreeFunctions>
+ <Axis>
+  <AxisAttributes>
+   <point>0 0 0</point>
+   <direction>0 0 1</direction>
+   <LGAstate>1</LGAstate>
+   <LGAL>1.09165</LGAL>
+   <LGAWf>0.00201039</LGAWf>
+  </AxisAttributes>
+  <TreeSegment ObjectIndex="0">
+   <TreeSegmentAttributes>
+    <point>0 0 0</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.05</LGAL>
+    <LGAR>0.00742783</LGAR>
+    <LGARh>0.000693746</LGARh>
+    <LGAage>2</LGAage>
+    <LGAM>1.59055e-05</LGAM>
+    <LGARTop>0.00742783</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00386591</LGAWs>
+    <LGAWh>3.40199e-05</LGAWh>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.05</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>2</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.05</point>
+     <direction>0 0 1</direction>
+     <LGAstate>0</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.05</point>
+     <direction>0 0 1</direction>
+     <LGAstate>0</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="1">
+   <TreeSegmentAttributes>
+    <point>0 0 0.05</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.0752234</LGAL>
+    <LGAR>0.00742699</LGAR>
+    <LGARh>0.000684678</LGARh>
+    <LGAage>1</LGAage>
+    <LGAM>0.00697638</LGAM>
+    <LGARTop>0.00742699</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00581614</LGAWs>
+    <LGAWh>4.98526e-05</LGAWh>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.125223</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>1</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.125223</point>
+     <direction>0 0 1</direction>
+     <LGAstate>0</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.125223</point>
+     <direction>0 0 1</direction>
+     <LGAstate>0</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="2">
+   <TreeSegmentAttributes>
+    <point>0 0 0.125223</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.0752234</LGAL>
+    <LGAR>0.00742699</LGAR>
+    <LGARh>0.000684678</LGARh>
+    <LGAage>1</LGAage>
+    <LGAM>0.00734229</LGAM>
+    <LGARTop>0.00742699</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00581614</LGAWs>
+    <LGAWh>4.98526e-05</LGAWh>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.200447</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>1</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.200447</point>
+     <direction>0 0 1</direction>
+     <LGAstate>0</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.200447</point>
+     <direction>0 0 1</direction>
+     <LGAstate>0</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="3">
+   <TreeSegmentAttributes>
+    <point>0 0 0.200447</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.0752234</LGAL>
+    <LGAR>0.00742699</LGAR>
+    <LGARh>0.000684678</LGARh>
+    <LGAage>1</LGAage>
+    <LGAM>0.00734229</LGAM>
+    <LGARTop>0.00742699</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00581614</LGAWs>
+    <LGAWh>4.98526e-05</LGAWh>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.27567</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>1</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.27567</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.266672</LGAL>
+     <LGAWf>0.00150545</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="6">
+     <TreeSegmentAttributes>
+      <point>0 0 0.27567</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.0888906</LGAL>
+      <LGAR>0.00260218</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00260218</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>0.000850925</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="4" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0411015 0.0489828 0.337419</PetioleStart>
+       <PetioleEnd>-0.154893 0.0501858 0.408943</PetioleEnd>
+       <LeafNormal>-0.166395 0.00175906 0.986058</LeafNormal>
+       <xdir>-0.986003 0.0104236 -0.166404</xdir>
+       <ydir>0.010571 0.999944 4.33681e-19</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="5" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0411015 0.0489828 0.337419</PetioleStart>
+       <PetioleEnd>-0.0225264 0.161255 0.408943</PetioleEnd>
+       <LeafNormal>0.0427172 0.258193 0.965149</LeafNormal>
+       <xdir>0.157539 0.952204 -0.261703</xdir>
+       <ydir>0.986588 -0.163228 0</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.0411015 0.0489828 0.337419</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0411015 0.0489828 0.337419</point>
+       <direction>-0.462383 0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="7">
+       <BudAttributes>
+        <point>-0.0411015 0.0489828 0.337419</point>
+        <direction>-0.84661 0.00895001 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0411015 0.0489828 0.337419</point>
+       <direction>-0.462383 0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="8">
+       <BudAttributes>
+        <point>-0.0411015 0.0489828 0.337419</point>
+        <direction>0.138198 0.835302 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="11">
+     <TreeSegmentAttributes>
+      <point>-0.0411015 0.0489828 0.337419</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.0888906</LGAL>
+      <LGAR>0.00260218</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00260218</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.000850925</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="9" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0822029 0.0979656 0.399167</PetioleStart>
+       <PetioleEnd>-0.195995 0.0991686 0.470692</PetioleEnd>
+       <LeafNormal>-0.993814 0.0105062 0.110558</LeafNormal>
+       <xdir>-0.110552 0.00116871 -0.99387</xdir>
+       <ydir>0.010571 0.999944 -8.67362e-19</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="10" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0822029 0.0979656 0.399167</PetioleStart>
+       <PetioleEnd>-0.0636278 0.210238 0.470692</PetioleEnd>
+       <LeafNormal>0.162326 0.981139 0.104961</LeafNormal>
+       <xdir>0.0171326 0.103554 -0.994476</xdir>
+       <ydir>0.986588 -0.163228 -1.04083e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.0822029 0.0979656 0.399167</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0822029 0.0979656 0.399167</point>
+       <direction>-0.462383 0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="12">
+       <BudAttributes>
+        <point>-0.0822029 0.0979656 0.399167</point>
+        <direction>-0.84661 0.00895001 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0822029 0.0979656 0.399167</point>
+       <direction>-0.462383 0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="13">
+       <BudAttributes>
+        <point>-0.0822029 0.0979656 0.399167</point>
+        <direction>0.138198 0.835302 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="16">
+     <TreeSegmentAttributes>
+      <point>-0.0822029 0.0979656 0.399167</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.0888906</LGAL>
+      <LGAR>0.00260218</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00260218</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.000850925</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="14" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.123304 0.146948 0.460916</PetioleStart>
+       <PetioleEnd>-0.170183 0.147444 0.490382</PetioleEnd>
+       <LeafNormal>-0.12191 0.00128878 0.99254</LeafNormal>
+       <xdir>-0.992485 0.0104921 -0.121917</xdir>
+       <ydir>0.010571 0.999944 0</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="15" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.123304 0.146948 0.460916</PetioleStart>
+       <PetioleEnd>-0.115652 0.193201 0.490382</PetioleEnd>
+       <LeafNormal>0.014619 0.0883606 0.995981</LeafNormal>
+       <xdir>0.162572 0.982624 -0.0895617</xdir>
+       <ydir>0.986588 -0.163228 1.73472e-18</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.123304 0.146948 0.460916</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.123304 0.146948 0.460916</point>
+       <direction>-0.462383 0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="17">
+       <BudAttributes>
+        <point>-0.123304 0.146948 0.460916</point>
+        <direction>-0.84661 0.00895001 0.532139</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.123304 0.146948 0.460916</point>
+       <direction>-0.462383 0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="18">
+       <BudAttributes>
+        <point>-0.123304 0.146948 0.460916</point>
+        <direction>0.138198 0.835302 0.532139</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="19">
+     <BudAttributes>
+      <point>-0.123304 0.146948 0.460916</point>
+      <direction>-0.462383 0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.27567</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.266672</LGAL>
+     <LGAWf>0.00150545</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="22">
+     <TreeSegmentAttributes>
+      <point>0 0 0.27567</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.0888906</LGAL>
+      <LGAR>0.00260218</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00260218</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>0.000850925</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="20" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0411015 -0.0489828 0.337419</PetioleStart>
+       <PetioleEnd>0.154893 -0.0501858 0.408943</PetioleEnd>
+       <LeafNormal>0.998652 -0.0105573 0.0508122</LeafNormal>
+       <xdir>0.0508093 -0.000537136 -0.998708</xdir>
+       <ydir>-0.010571 -0.999944 1.0842e-19</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="21" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0411015 -0.0489828 0.337419</PetioleStart>
+       <PetioleEnd>0.0225264 -0.161255 0.408943</PetioleEnd>
+       <LeafNormal>-0.00169426 -0.0102405 0.999946</LeafNormal>
+       <xdir>-0.163219 -0.986535 -0.0103797</xdir>
+       <ydir>-0.986588 0.163228 0</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.0411015 -0.0489828 0.337419</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0411015 -0.0489828 0.337419</point>
+       <direction>0.462383 -0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="23">
+       <BudAttributes>
+        <point>0.0411015 -0.0489828 0.337419</point>
+        <direction>0.84661 -0.00895001 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0411015 -0.0489828 0.337419</point>
+       <direction>0.462383 -0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="24">
+       <BudAttributes>
+        <point>0.0411015 -0.0489828 0.337419</point>
+        <direction>-0.138198 -0.835302 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="27">
+     <TreeSegmentAttributes>
+      <point>0.0411015 -0.0489828 0.337419</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.0888906</LGAL>
+      <LGAR>0.00260218</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00260218</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.000850925</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="25" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0822029 -0.0979656 0.399167</PetioleStart>
+       <PetioleEnd>0.195995 -0.0991686 0.470692</PetioleEnd>
+       <LeafNormal>0.314529 -0.00332507 0.949242</LeafNormal>
+       <xdir>0.949189 -0.0100344 -0.314546</xdir>
+       <ydir>-0.010571 -0.999944 0</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="26" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0822029 -0.0979656 0.399167</PetioleStart>
+       <PetioleEnd>0.0636278 -0.210238 0.470692</PetioleEnd>
+       <LeafNormal>-0.0169239 -0.102292 0.99461</LeafNormal>
+       <xdir>-0.162348 -0.981271 -0.103683</xdir>
+       <ydir>-0.986588 0.163228 -3.46945e-18</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.0822029 -0.0979656 0.399167</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0822029 -0.0979656 0.399167</point>
+       <direction>0.462383 -0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="28">
+       <BudAttributes>
+        <point>0.0822029 -0.0979656 0.399167</point>
+        <direction>0.84661 -0.00895001 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0822029 -0.0979656 0.399167</point>
+       <direction>0.462383 -0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="29">
+       <BudAttributes>
+        <point>0.0822029 -0.0979656 0.399167</point>
+        <direction>-0.138198 -0.835302 0.532139</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="32">
+     <TreeSegmentAttributes>
+      <point>0.0822029 -0.0979656 0.399167</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.0888906</LGAL>
+      <LGAR>0.00260218</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00260218</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.000850925</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="30" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.123304 -0.146948 0.460916</PetioleStart>
+       <PetioleEnd>0.170183 -0.147444 0.490382</PetioleEnd>
+       <LeafNormal>0.285057 -0.00301351 0.958506</LeafNormal>
+       <xdir>0.958452 -0.0101324 -0.285073</xdir>
+       <ydir>-0.010571 -0.999944 0</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="31" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.123304 -0.146948 0.460916</PetioleStart>
+       <PetioleEnd>0.115652 -0.193201 0.490382</PetioleEnd>
+       <LeafNormal>-0.0922691 -0.557696 0.824901</LeafNormal>
+       <xdir>-0.134647 -0.813838 -0.565277</xdir>
+       <ydir>-0.986588 0.163228 -1.38778e-17</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.123304 -0.146948 0.460916</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.123304 -0.146948 0.460916</point>
+       <direction>0.462383 -0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="33">
+       <BudAttributes>
+        <point>0.123304 -0.146948 0.460916</point>
+        <direction>0.84661 -0.00895001 0.532139</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.123304 -0.146948 0.460916</point>
+       <direction>0.462383 -0.551046 0.694658</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="34">
+       <BudAttributes>
+        <point>0.123304 -0.146948 0.460916</point>
+        <direction>-0.138198 -0.835302 0.532139</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="35">
+     <BudAttributes>
+      <point>0.123304 -0.146948 0.460916</point>
+      <direction>0.462383 -0.551046 0.694658</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="36">
+   <TreeSegmentAttributes>
+    <point>0 0 0.27567</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.0752234</LGAL>
+    <LGAR>0.00645117</LGAR>
+    <LGARh>0.000684678</LGARh>
+    <LGAage>1</LGAage>
+    <LGAM>0.00221944</LGAM>
+    <LGARTop>0.00645117</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00437595</LGAWs>
+    <LGAWh>4.98526e-05</LGAWh>
+   </TreeSegmentAttributes>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.350894</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>1</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.350894</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.400008</LGAL>
+     <LGAWf>0.00209455</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="39">
+     <TreeSegmentAttributes>
+      <point>0 0 0.350894</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="37" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0026083 -0.0597398 0.431048</PetioleStart>
+       <PetioleEnd>0.0739953 -0.119534 0.506643</PetioleEnd>
+       <LeafNormal>0.00215865 -0.00168496 0.999996</LeafNormal>
+       <xdir>0.788284 -0.615306 -0.0027384</xdir>
+       <ydir>-0.615308 -0.788287 0</ydir>
+       <EllipseSMajorA>0.0729869</EllipseSMajorA>
+       <EllipseSMinorA>0.0802856</EllipseSMinorA>
+       <LGAA>0.0147273</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000294545</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="38" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0026083 -0.0597398 0.431048</PetioleStart>
+       <PetioleEnd>-0.0841318 -0.11263 0.506643</PetioleEnd>
+       <LeafNormal>-0.690318 -0.447857 0.56823</LeafNormal>
+       <xdir>-0.476696 -0.309266 -0.82287</xdir>
+       <ydir>-0.544263 0.838915 0</ydir>
+       <EllipseSMajorA>0.0729869</EllipseSMajorA>
+       <EllipseSMinorA>0.0802856</EllipseSMinorA>
+       <LGAA>0.0147273</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000294545</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.0026083 -0.0597398 0.431048</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0026083 -0.0597398 0.431048</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="40">
+       <BudAttributes>
+        <point>-0.0026083 -0.0597398 0.431048</point>
+        <direction>0.622195 -0.485663 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0026083 -0.0597398 0.431048</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="41">
+       <BudAttributes>
+        <point>-0.0026083 -0.0597398 0.431048</point>
+        <direction>-0.662156 -0.429587 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="44">
+     <TreeSegmentAttributes>
+      <point>-0.0026083 -0.0597398 0.431048</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="42" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0052166 -0.11948 0.511202</PetioleStart>
+       <PetioleEnd>0.0784121 -0.184757 0.593731</PetioleEnd>
+       <LeafNormal>0.538618 -0.420425 0.73016</LeafNormal>
+       <xdir>0.575575 -0.449273 -0.683276</xdir>
+       <ydir>-0.615308 -0.788287 2.77556e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="43" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0052166 -0.11948 0.511202</PetioleStart>
+       <PetioleEnd>-0.0942164 -0.17722 0.593731</PetioleEnd>
+       <LeafNormal>-0.716123 -0.464599 0.52088</LeafNormal>
+       <xdir>-0.436974 -0.283495 -0.85363</xdir>
+       <ydir>-0.544263 0.838915 2.77556e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.0052166 -0.11948 0.511202</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0052166 -0.11948 0.511202</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="45">
+       <BudAttributes>
+        <point>-0.0052166 -0.11948 0.511202</point>
+        <direction>0.622195 -0.485663 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0052166 -0.11948 0.511202</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="46">
+       <BudAttributes>
+        <point>-0.0052166 -0.11948 0.511202</point>
+        <direction>-0.662156 -0.429587 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="49">
+     <TreeSegmentAttributes>
+      <point>-0.0052166 -0.11948 0.511202</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="47" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.00782489 -0.17922 0.591357</PetioleStart>
+       <PetioleEnd>0.0758038 -0.244497 0.673885</PetioleEnd>
+       <LeafNormal>0.321975 -0.251322 0.912781</LeafNormal>
+       <xdir>0.719533 -0.561641 -0.408449</xdir>
+       <ydir>-0.615308 -0.788287 -2.77556e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="48" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.00782489 -0.17922 0.591357</PetioleStart>
+       <PetioleEnd>-0.0968247 -0.23696 0.673885</PetioleEnd>
+       <LeafNormal>-0.820292 -0.532181 0.209535</LeafNormal>
+       <xdir>-0.175782 -0.114042 -0.977801</xdir>
+       <ydir>-0.544263 0.838915 0</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.00782489 -0.17922 0.591357</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.00782489 -0.17922 0.591357</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="50">
+       <BudAttributes>
+        <point>-0.00782489 -0.17922 0.591357</point>
+        <direction>0.622195 -0.485663 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.00782489 -0.17922 0.591357</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="51">
+       <BudAttributes>
+        <point>-0.00782489 -0.17922 0.591357</point>
+        <direction>-0.662156 -0.429587 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="54">
+     <TreeSegmentAttributes>
+      <point>-0.00782489 -0.17922 0.591357</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="52" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0104332 -0.238959 0.671511</PetioleStart>
+       <PetioleEnd>0.0240195 -0.265852 0.705511</PetioleEnd>
+       <LeafNormal>0.649164 -0.506714 0.567298</LeafNormal>
+       <xdir>0.447194 -0.349063 -0.823513</xdir>
+       <ydir>-0.615308 -0.788287 8.32667e-17</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="53" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>-0.0104332 -0.238959 0.671511</PetioleStart>
+       <PetioleEnd>-0.0470986 -0.262747 0.705511</PetioleEnd>
+       <LeafNormal>-0.775905 -0.503384 0.380232</LeafNormal>
+       <xdir>-0.318982 -0.206946 -0.924891</xdir>
+       <ydir>-0.544263 0.838915 2.77556e-17</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>-0.0104332 -0.238959 0.671511</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0104332 -0.238959 0.671511</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="55">
+       <BudAttributes>
+        <point>-0.0104332 -0.238959 0.671511</point>
+        <direction>0.622195 -0.485663 0.614007</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>-0.0104332 -0.238959 0.671511</point>
+       <direction>-0.0260825 -0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="56">
+       <BudAttributes>
+        <point>-0.0104332 -0.238959 0.671511</point>
+        <direction>-0.662156 -0.429587 0.614007</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="57">
+     <BudAttributes>
+      <point>-0.0104332 -0.238959 0.671511</point>
+      <direction>-0.0260825 -0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.350894</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0.400008</LGAL>
+     <LGAWf>0.00209455</LGAWf>
+    </AxisAttributes>
+    <TreeSegment ObjectIndex="60">
+     <TreeSegmentAttributes>
+      <point>0 0 0.350894</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="58" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0026083 0.0597398 0.431048</PetioleStart>
+       <PetioleEnd>-0.0739953 0.119534 0.506643</PetioleEnd>
+       <LeafNormal>-0.254214 0.19843 0.946573</LeafNormal>
+       <xdir>-0.746171 0.582434 -0.322489</xdir>
+       <ydir>0.615308 0.788287 2.77556e-17</ydir>
+       <EllipseSMajorA>0.0729869</EllipseSMajorA>
+       <EllipseSMinorA>0.0802856</EllipseSMinorA>
+       <LGAA>0.0147273</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000294545</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="59" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0026083 0.0597398 0.431048</PetioleStart>
+       <PetioleEnd>0.0841318 0.11263 0.506643</PetioleEnd>
+       <LeafNormal>0.408534 0.265045 0.873413</LeafNormal>
+       <xdir>0.732719 0.475366 -0.486979</xdir>
+       <ydir>0.544263 -0.838915 -2.77556e-17</ydir>
+       <EllipseSMajorA>0.0729869</EllipseSMajorA>
+       <EllipseSMinorA>0.0802856</EllipseSMinorA>
+       <LGAA>0.0147273</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000294545</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.0026083 0.0597398 0.431048</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0026083 0.0597398 0.431048</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="61">
+       <BudAttributes>
+        <point>0.0026083 0.0597398 0.431048</point>
+        <direction>-0.622195 0.485663 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0026083 0.0597398 0.431048</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="62">
+       <BudAttributes>
+        <point>0.0026083 0.0597398 0.431048</point>
+        <direction>0.662156 0.429587 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="65">
+     <TreeSegmentAttributes>
+      <point>0.0026083 0.0597398 0.431048</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="63" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0052166 0.11948 0.511202</PetioleStart>
+       <PetioleEnd>-0.0784121 0.184757 0.593731</PetioleEnd>
+       <LeafNormal>-0.526815 0.411213 0.743888</LeafNormal>
+       <xdir>-0.586397 0.45772 -0.668304</xdir>
+       <ydir>0.615308 0.788287 -2.77556e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="64" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0052166 0.11948 0.511202</PetioleStart>
+       <PetioleEnd>0.0942164 0.17722 0.593731</PetioleEnd>
+       <LeafNormal>0.307301 0.199368 0.930494</LeafNormal>
+       <xdir>0.780605 0.506433 -0.366308</xdir>
+       <ydir>0.544263 -0.838915 -2.77556e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.0052166 0.11948 0.511202</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0052166 0.11948 0.511202</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="66">
+       <BudAttributes>
+        <point>0.0052166 0.11948 0.511202</point>
+        <direction>-0.622195 0.485663 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0052166 0.11948 0.511202</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="67">
+       <BudAttributes>
+        <point>0.0052166 0.11948 0.511202</point>
+        <direction>0.662156 0.429587 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="70">
+     <TreeSegmentAttributes>
+      <point>0.0052166 0.11948 0.511202</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="68" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.00782489 0.17922 0.591357</PetioleStart>
+       <PetioleEnd>-0.0758038 0.244497 0.673885</PetioleEnd>
+       <LeafNormal>-0.765804 0.597759 0.237124</LeafNormal>
+       <xdir>-0.186922 0.145904 -0.971479</xdir>
+       <ydir>0.615308 0.788287 2.77556e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="69" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.00782489 0.17922 0.591357</PetioleStart>
+       <PetioleEnd>0.0968247 0.23696 0.673885</PetioleEnd>
+       <LeafNormal>0.832246 0.539936 0.125839</LeafNormal>
+       <xdir>0.105568 0.0684893 -0.992051</xdir>
+       <ydir>0.544263 -0.838915 -3.46945e-17</ydir>
+       <EllipseSMajorA>0.0769349</EllipseSMajorA>
+       <EllipseSMinorA>0.0846284</EllipseSMinorA>
+       <LGAA>0.0163636</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>0.000327273</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.00782489 0.17922 0.591357</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.00782489 0.17922 0.591357</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="71">
+       <BudAttributes>
+        <point>0.00782489 0.17922 0.591357</point>
+        <direction>-0.622195 0.485663 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.00782489 0.17922 0.591357</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="72">
+       <BudAttributes>
+        <point>0.00782489 0.17922 0.591357</point>
+        <direction>0.662156 0.429587 0.614007</direction>
+        <LGAomega>2</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <TreeSegment ObjectIndex="75">
+     <TreeSegmentAttributes>
+      <point>0.00782489 0.17922 0.591357</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAL>0.100002</LGAL>
+      <LGAR>0.00346122</LGAR>
+      <LGARh>0</LGARh>
+      <LGAage>0</LGAage>
+      <LGAM>0</LGAM>
+      <LGARTop>0.00346122</LGARTop>
+      <LGAtype>0</LGAtype>
+      <LGAvi>-1</LGAvi>
+      <LGAWs>0.00169367</LGAWs>
+      <LGAWh>0</LGAWh>
+     </TreeSegmentAttributes>
+     <BroadLeaf ObjectIndex="73" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0104332 0.238959 0.671511</PetioleStart>
+       <PetioleEnd>-0.0240195 0.265852 0.705511</PetioleEnd>
+       <LeafNormal>-0.531284 0.414701 0.738756</LeafNormal>
+       <xdir>-0.582351 0.454562 -0.673974</xdir>
+       <ydir>0.615308 0.788287 0</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+     <BroadLeaf ObjectIndex="74" Shape="Ellipse">
+      <BroadLeafAttributes>
+       <LGAsf>50</LGAsf>
+       <LGAtauL>0.06</LGAtauL>
+       <LGAdof>0.8</LGAdof>
+       <SkySectors>37</SkySectors>
+       <PetioleStart>0.0104332 0.238959 0.671511</PetioleStart>
+       <PetioleEnd>0.0470986 0.262747 0.705511</PetioleEnd>
+       <LeafNormal>0.560416 0.363581 0.744139</LeafNormal>
+       <xdir>0.62427 0.405007 -0.668024</xdir>
+       <ydir>0.544263 -0.838915 8.32667e-17</ydir>
+       <EllipseSMajorA>0.042139</EllipseSMajorA>
+       <EllipseSMinorA>0.0463529</EllipseSMinorA>
+       <LGAA>0.00490909</LGAA>
+       <LGAP>0</LGAP>
+       <LGAM>0</LGAM>
+       <LGAQabs>0</LGAQabs>
+       <LGAQin>0</LGAQin>
+       <LGAWf>9.81818e-05</LGAWf>
+       <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+      </BroadLeafAttributes>
+     </BroadLeaf>
+    </TreeSegment>
+    <BranchingPoint>
+     <BranchingPointAttributes>
+      <point>0.0104332 0.238959 0.671511</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAMaxD>0</LGAMaxD>
+      <LGAage>0</LGAage>
+      <LGAomega>2</LGAomega>
+      <LGAstate>1</LGAstate>
+      <LGAtype>-1</LGAtype>
+     </BranchingPointAttributes>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0104332 0.238959 0.671511</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="76">
+       <BudAttributes>
+        <point>0.0104332 0.238959 0.671511</point>
+        <direction>-0.622195 0.485663 0.614007</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+     <Axis>
+      <AxisAttributes>
+       <point>0.0104332 0.238959 0.671511</point>
+       <direction>0.0260825 0.597387 0.801529</direction>
+       <LGAstate>1</LGAstate>
+       <LGAL>0</LGAL>
+       <LGAWf>0</LGAWf>
+      </AxisAttributes>
+      <Bud ObjectIndex="77">
+       <BudAttributes>
+        <point>0.0104332 0.238959 0.671511</point>
+        <direction>0.662156 0.429587 0.614007</direction>
+        <LGAomega>3</LGAomega>
+        <LGAcollision>0</LGAcollision>
+        <LGAip>0</LGAip>
+        <LGAQin>0</LGAQin>
+        <LGAstatus>0</LGAstatus>
+        <LGAstate>1</LGAstate>
+        <LGAtype>0</LGAtype>
+       </BudAttributes>
+      </Bud>
+     </Axis>
+    </BranchingPoint>
+    <Bud ObjectIndex="78">
+     <BudAttributes>
+      <point>0.0104332 0.238959 0.671511</point>
+      <direction>0.0260825 0.597387 0.801529</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="81">
+   <TreeSegmentAttributes>
+    <point>0 0 0.350894</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.185189</LGAL>
+    <LGAR>0.00414593</LGAR>
+    <LGARh>0</LGARh>
+    <LGAage>0</LGAage>
+    <LGAM>0</LGAM>
+    <LGARTop>0.00414593</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>1</LGAvi>
+    <LGAWs>0.00450009</LGAWs>
+    <LGAWh>0</LGAWh>
+   </TreeSegmentAttributes>
+   <BroadLeaf ObjectIndex="79" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 0.536082</PetioleStart>
+     <PetioleEnd>-0.0707769 -0.00309019 0.620511</PetioleEnd>
+     <LeafNormal>-0.935524 -0.0408458 0.350895</LeafNormal>
+     <xdir>-0.350561 -0.0153058 -0.936415</xdir>
+     <ydir>-0.0436194 0.999048 -3.46945e-18</ydir>
+     <EllipseSMajorA>0.0681955</EllipseSMajorA>
+     <EllipseSMinorA>0.0750151</EllipseSMinorA>
+     <LGAA>0.0128571</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>0.000257143</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+   <BroadLeaf ObjectIndex="80" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 0.536082</PetioleStart>
+     <PetioleEnd>0.0707769 0.00309019 0.620511</PetioleEnd>
+     <LeafNormal>0.497082 0.0217031 0.867432</LeafNormal>
+     <xdir>0.866607 0.0378369 -0.497556</xdir>
+     <ydir>0.0436194 -0.999048 0</ydir>
+     <EllipseSMajorA>0.0681955</EllipseSMajorA>
+     <EllipseSMinorA>0.0750151</EllipseSMinorA>
+     <LGAA>0.0128571</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>0.000257143</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.536082</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>0</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.536082</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="82">
+     <BudAttributes>
+      <point>0 0 0.536082</point>
+      <direction>-0.642176 -0.028038 0.766044</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.536082</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="83">
+     <BudAttributes>
+      <point>0 0 0.536082</point>
+      <direction>0.642176 0.028038 0.766044</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="86">
+   <TreeSegmentAttributes>
+    <point>0 0 0.536082</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.185189</LGAL>
+    <LGAR>0.00414593</LGAR>
+    <LGARh>0</LGARh>
+    <LGAage>0</LGAage>
+    <LGAM>0</LGAM>
+    <LGARTop>0.00414593</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>-1</LGAvi>
+    <LGAWs>0.00450009</LGAWs>
+    <LGAWh>0</LGAWh>
+   </TreeSegmentAttributes>
+   <BroadLeaf ObjectIndex="84" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 0.721271</PetioleStart>
+     <PetioleEnd>0.0653893 -0.0548682 0.822999</PetioleEnd>
+     <LeafNormal>0.447201 -0.375246 0.811912</LeafNormal>
+     <xdir>0.621961 -0.521887 -0.58378</xdir>
+     <ydir>-0.642788 -0.766044 5.55112e-17</ydir>
+     <EllipseSMajorA>0.0763834</EllipseSMajorA>
+     <EllipseSMinorA>0.0840218</EllipseSMinorA>
+     <LGAA>0.0161299</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>0.000322597</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+   <BroadLeaf ObjectIndex="85" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 0.721271</PetioleStart>
+     <PetioleEnd>-0.0653893 0.0548682 0.822999</PetioleEnd>
+     <LeafNormal>-0.198155 0.166272 0.965965</LeafNormal>
+     <xdir>-0.739972 0.62091 -0.258673</xdir>
+     <ydir>0.642788 0.766044 0</ydir>
+     <EllipseSMajorA>0.0763834</EllipseSMajorA>
+     <EllipseSMinorA>0.0840218</EllipseSMinorA>
+     <LGAA>0.0161299</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>0.000322597</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.721271</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>0</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.721271</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="87">
+     <BudAttributes>
+      <point>0 0 0.721271</point>
+      <direction>0.492404 -0.413176 0.766044</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.721271</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="88">
+     <BudAttributes>
+      <point>0 0 0.721271</point>
+      <direction>-0.492404 0.413176 0.766044</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="91">
+   <TreeSegmentAttributes>
+    <point>0 0 0.721271</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.185189</LGAL>
+    <LGAR>0.00414593</LGAR>
+    <LGARh>0</LGARh>
+    <LGAage>0</LGAage>
+    <LGAM>0</LGAM>
+    <LGARTop>0.00414593</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>-1</LGAvi>
+    <LGAWs>0.00450009</LGAWs>
+    <LGAWh>0</LGAWh>
+   </TreeSegmentAttributes>
+   <BroadLeaf ObjectIndex="89" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 0.90646</PetioleStart>
+     <PetioleEnd>-0.011277 0.0856574 1.00942</PetioleEnd>
+     <LeafNormal>-0.125134 0.950486 0.284459</LeafNormal>
+     <xdir>-0.0371294 0.282026 -0.958688</xdir>
+     <ydir>0.991445 0.130526 -6.93889e-18</ydir>
+     <EllipseSMajorA>0.0769349</EllipseSMajorA>
+     <EllipseSMinorA>0.0846284</EllipseSMinorA>
+     <LGAA>0.0163636</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>0.000327273</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+   <BroadLeaf ObjectIndex="90" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 0.90646</PetioleStart>
+     <PetioleEnd>0.011277 -0.0856574 1.00942</PetioleEnd>
+     <LeafNormal>0.118834 -0.902635 0.413676</LeafNormal>
+     <xdir>0.0539956 -0.410137 -0.910424</xdir>
+     <ydir>-0.991445 -0.130526 6.93889e-18</ydir>
+     <EllipseSMajorA>0.0769349</EllipseSMajorA>
+     <EllipseSMinorA>0.0846284</EllipseSMinorA>
+     <LGAA>0.0163636</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>0.000327273</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 0.90646</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>0</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.90646</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="92">
+     <BudAttributes>
+      <point>0 0 0.90646</point>
+      <direction>-0.0839006 0.637288 0.766044</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 0.90646</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="93">
+     <BudAttributes>
+      <point>0 0 0.90646</point>
+      <direction>0.0839006 -0.637288 0.766044</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <TreeSegment ObjectIndex="96">
+   <TreeSegmentAttributes>
+    <point>0 0 0.90646</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAL>0.185189</LGAL>
+    <LGAR>0.00414593</LGAR>
+    <LGARh>0</LGARh>
+    <LGAage>0</LGAage>
+    <LGAM>0</LGAM>
+    <LGARTop>0.00414593</LGARTop>
+    <LGAtype>0</LGAtype>
+    <LGAvi>-1</LGAvi>
+    <LGAWs>0.00450009</LGAWs>
+    <LGAWh>0</LGAWh>
+   </TreeSegmentAttributes>
+   <BroadLeaf ObjectIndex="94" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 1.09165</PetioleStart>
+     <PetioleEnd>-0.0216606 -0.0309345 1.13215</PetioleEnd>
+     <LeafNormal>-0.415937 -0.59402 0.688575</LeafNormal>
+     <xdir>-0.394951 -0.564048 -0.725165</xdir>
+     <ydir>-0.819152 0.573576 -2.77556e-17</ydir>
+     <EllipseSMajorA>0.042139</EllipseSMajorA>
+     <EllipseSMinorA>0.0463529</EllipseSMinorA>
+     <LGAA>0.00490909</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>9.81818e-05</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+   <BroadLeaf ObjectIndex="95" Shape="Ellipse">
+    <BroadLeafAttributes>
+     <LGAsf>50</LGAsf>
+     <LGAtauL>0.06</LGAtauL>
+     <LGAdof>0.8</LGAdof>
+     <SkySectors>37</SkySectors>
+     <PetioleStart>0 0 1.09165</PetioleStart>
+     <PetioleEnd>0.0216606 0.0309345 1.13215</PetioleEnd>
+     <LeafNormal>0.385223 0.550155 0.7409</LeafNormal>
+     <xdir>0.424963 0.60691 -0.671615</xdir>
+     <ydir>0.819152 -0.573576 2.77556e-17</ydir>
+     <EllipseSMajorA>0.042139</EllipseSMajorA>
+     <EllipseSMinorA>0.0463529</EllipseSMinorA>
+     <LGAA>0.00490909</LGAA>
+     <LGAP>0</LGAP>
+     <LGAM>0</LGAM>
+     <LGAQabs>0</LGAQabs>
+     <LGAQin>0</LGAQin>
+     <LGAWf>9.81818e-05</LGAWf>
+     <RadiationVector>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</RadiationVector>
+    </BroadLeafAttributes>
+   </BroadLeaf>
+  </TreeSegment>
+  <BranchingPoint>
+   <BranchingPointAttributes>
+    <point>0 0 1.09165</point>
+    <direction>0 0 1</direction>
+    <LGAMaxD>0</LGAMaxD>
+    <LGAage>0</LGAage>
+    <LGAomega>1</LGAomega>
+    <LGAstate>1</LGAstate>
+    <LGAtype>-1</LGAtype>
+   </BranchingPointAttributes>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 1.09165</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="97">
+     <BudAttributes>
+      <point>0 0 1.09165</point>
+      <direction>-0.391178 -0.55866 0.731354</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+   <Axis>
+    <AxisAttributes>
+     <point>0 0 1.09165</point>
+     <direction>0 0 1</direction>
+     <LGAstate>1</LGAstate>
+     <LGAL>0</LGAL>
+     <LGAWf>0</LGAWf>
+    </AxisAttributes>
+    <Bud ObjectIndex="98">
+     <BudAttributes>
+      <point>0 0 1.09165</point>
+      <direction>0.391178 0.55866 0.731354</direction>
+      <LGAomega>2</LGAomega>
+      <LGAcollision>0</LGAcollision>
+      <LGAip>0</LGAip>
+      <LGAQin>0</LGAQin>
+      <LGAstatus>0</LGAstatus>
+      <LGAstate>1</LGAstate>
+      <LGAtype>0</LGAtype>
+     </BudAttributes>
+    </Bud>
+   </Axis>
+  </BranchingPoint>
+  <Bud ObjectIndex="99">
+   <BudAttributes>
+    <point>0 0 1.09165</point>
+    <direction>0 0 1</direction>
+    <LGAomega>1</LGAomega>
+    <LGAcollision>0</LGAcollision>
+    <LGAip>0</LGAip>
+    <LGAQin>0</LGAQin>
+    <LGAstatus>0</LGAstatus>
+    <LGAstate>1</LGAstate>
+    <LGAtype>0</LGAtype>
+   </BudAttributes>
+  </Bud>
+ </Axis>
+</Tree>
