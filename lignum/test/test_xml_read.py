@@ -7,16 +7,51 @@
 
 from lignum.io import *
 
-fn = r'C-pine.xml'
-g = xml2mtg(fn)
-sc1 = lignum_turtle(g)
+def test1():
+    fn = r'C-pine.xml'
+    g = xml2mtg(fn)
+    scene = lignum_turtle(g)
 
-fn = r'C-SugarMaple.xml'
-g2 = xml2mtg(fn)
-sc2 = lignum_turtle(g2)
+    assert len(g) == 38
+    assert g.nb_scales() == 4
+    assert g.nb_vertices(scale=1) == 1
+    assert g.nb_vertices(scale=2) == 15
+    assert g.nb_vertices(scale=3) == 21
 
+    assert len(scene) == 20
+    
+def test2():
+    fn = r'C-SugarMaple.xml'
+    g = xml2mtg(fn)
+    scene = lignum_turtle(g)
+
+    assert len(g) == 149
+    assert g.nb_scales() == 4
+    assert g.nb_vertices(scale=1) == 1
+    assert g.nb_vertices(scale=2) == 47
+    assert g.nb_vertices(scale=3) == 100
+
+    assert len(scene) == 118
+
+def test3():
+    fn = r'this9-1-2-10.xml'
+    g = xml2mtg(fn)
+    scene = lignum_turtle(g)
+
+    assert len(g) == 1427
+    assert g.nb_scales() == 4
+    assert g.nb_vertices(scale=1) == 1
+    assert g.nb_vertices(scale=2) == 460
+    assert g.nb_vertices(scale=3) == 965
+
+    assert len(scene) == 827
+
+# Interactive test
+"""
 fn = r'this9-1-2-10.xml'
 g = xml2mtg(fn)
-sc1 = lignum_turtle(g)
+scene = lignum_turtle(g)
 
-mtg_turtle.Plot(sc1)
+mtg_turtle.Plot(scene)
+
+"""

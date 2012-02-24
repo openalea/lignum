@@ -1,16 +1,6 @@
-# TODO
-
-# 1. Implement the full specification
-# 2. Test all the cases with several examples
-# 3. Implement a loop in OpenAlea
-# 4. Use the PlantGL turtle
-
-# 2.1. add a header
-# 2.2. separate graph parsing and scenegraph generation
-# 2.3. Error management
-# 2.4. Documentation
-# 2.5. Compute properties when it is possible (sphere, ...)
-# 2.6. 2D draw of the graph
+##############################################################################
+# XML Lignum reader and writer.
+##############################################################################
 
 from StringIO import StringIO
 from math import radians
@@ -336,15 +326,13 @@ def lignum_turtle(g):
     # Base diameter LGADbase
     n = g.node(1)
     position = Vector3(map(float,n.point.split()))
-    param = pgl.TurtleParam()
-    param.position = position
-    myTurtle = pgl.PglTurtle(param)
+
+    myTurtle = pgl.PglTurtle()
+    myTurtle.move(position)
     
     def lignum_visitor(g, v, turtle):
         n = g.node(v)
         turtle.setId(v)
-
-        param = turtle.getParameters()
 
         def my_leaf(xs, ys):
             return pgl.Translated((xs/2,0,0),
