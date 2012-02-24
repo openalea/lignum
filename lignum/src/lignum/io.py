@@ -19,6 +19,9 @@ class Parser(object):
         self.trash = []
         self._g = MTG()
 
+        # Current proxy node for managing properties
+        self._node = None 
+
         doc = xml.parse(fn)
         root = doc.getroot()
 
@@ -60,7 +63,8 @@ class Parser(object):
         self.segments = []
         self.edges = ['<']
 
-        g.node(self.tree_id).label = 'Tree'
+        self._node = g.node(self.tree_id)
+        self._node.label = 'Tree'
 
         # Dispatch on Tree Attributes, TreeParameters and TreeFunctions.
         # Then Dispatch on Axis.
@@ -72,21 +76,7 @@ class Parser(object):
         self.segments = []
         self.edges = []
 
-    def TreeAttributes(self, elts):
-        """ Add the attributes as a property of the MTG.
-
-        """
-        root = self._g.node(self.tree_id)
-        root.point, root.direction, root.attributes = self._parse_attributes(elts)
-
-    def TreeParameters(self, elts):
-        root = self._g.node(self.tree_id)
-        root.parameters = dict((a.tag, a.text) for a in elts)
-
-    def TreeFunctions(self, elts):
-        root = self._g.node(self.tree_id)
-        root.functions= dict((a.tag, a.text) for a in elts)
-
+    
     def Axis(self, elts):
         """ Create a new axis depending of the branching type
         """
@@ -102,6 +92,8 @@ class Parser(object):
             else:
                 self.axes[-1] = new_axis
 
+        self._node = g.node(self.axes[-1])
+        
         # Recursive structure
         for elt in elts:
             self.dispatch(elt)
@@ -113,22 +105,10 @@ class Parser(object):
             self.segments = self.segments[:len(self.axes)]
             self.edges[-1] = edge_type
 
-    def AxisAttributes(self, elts):
-        """ Add properties to the current Axis.
-        """
-        node = self._g.node(self.axes[-1])
-        node.point, node.direction, node.attributes = self._parse_attributes(elts)
-
-    def TreeSegment(self, elts, ObjectIndex=None):
+    def TreeSegment(self, elts, **props):
         """ Add one internode at scale 3.
         """
-        self.internode(elts, ObjectIndex=ObjectIndex, label='TreeSegment')
-
-    def TreeSegmentAttributes(self, elts):
-        """ Add properties to the current TreeSegment.
-        """
-        node = self._g.node(self.segments[-1])
-        node.point, node.direction, node.attributes = self._parse_attributes(elts)
+        self.internode(elts, label='TreeSegment', **props)
 
     def BranchingPoint(self, elts):
         """ Define a branching point. """
@@ -145,11 +125,10 @@ class Parser(object):
         """
         pass
 
-    def Bud(self, elts, ObjectIndex=None):
+    def Bud(self, elts, **props):
         """ Add a bud at the same scale at the end of an Axis. """
-        self.internode(elts, ObjectIndex=ObjectIndex, label='Bud')
+        self.internode(elts, label='Bud', **props)
 
-    BudAttributes = TreeSegmentAttributes
 
     def BroadLeaf(self, elts, **props):
         """ Add a BroadLeaf to a TreeSegment """
@@ -157,15 +136,11 @@ class Parser(object):
         parent = self.segments[-1]
         leaf = g.add_child(parent, edge_type='+', 
                            label='BroadLeaf',**props)
-        self.current_leaf = leaf
+        self._node = g.node(leaf)
         for elt in elts:
             self.dispatch(elt)
 
-    def BroadLeafAttributes(self, elts):
-        node = self._g.node(self.current_leaf)
-        node.attributes = dict((a.tag, a.text) for a in elts)
-
-    def internode(self, elts, ObjectIndex=None, label='TreeSegment'):
+    def internode(self, elts, label='TreeSegment', **props):
         """ Shared method for TreeSegment and Bud.
 
         label is a TreeSegment or a Bud.
@@ -175,7 +150,8 @@ class Parser(object):
         complex_axis = self.axes[-1]
         
         if not self.segments:
-            self.segments.append(g.add_component(complex_axis, label=label, ObjectIndex=ObjectIndex))
+            new_segment = g.add_component(complex_axis, label=label, **props)
+            self.segments.append(new_segment)
         else:
             parent = self.segments[-1]
             # There is A BUG in add_child and complex with an existing complex!!!!
@@ -184,16 +160,18 @@ class Parser(object):
                 new_segment = g.add_component(complex_axis)
                 new_segment = g.add_child(parent, child=new_segment,
                                           edge_type=edge_type, label=label,
-                                          ObjectIndex=ObjectIndex)
+                                          **props)
             else:
                 new_segment = g.add_child(parent, 
                                           edge_type=edge_type, label=label,
-                                          ObjectIndex=ObjectIndex)
+                                          **props)
 
             if edge_type == '+':
                 self.segments.append(new_segment)
             else: 
                 self.segments[-1] = new_segment
+
+        self._node = g.node(self.segments[-1])
 
         # Property management
         for elt in elts:
@@ -203,13 +181,16 @@ class Parser(object):
         if edge_type == '+':
             self.edges[-1] = '<'
 
-    @staticmethod
-    def _parse_attributes(elts) :
-        d = dict((a.tag, a.text) for a in elts)
-        point = d.pop('point')
-        direction = d.pop('direction')
-        return point, direction, d 
+    def update_attributes(self, elts) :
+        """ Update the properties in the MTG """
+        proxy_node = self._node
+        for a in elts:
+            proxy_node.__setattr__(a.tag, a.text)
 
+    TreeParameters = TreeFunctions = TreeAttributes = update_attributes
+    AxisAttributes = update_attributes
+    TreeSegmentAttributes = update_attributes
+    BroadLeafAttributes = BudAttributes = TreeSegmentAttributes
 
 ##########################################################################
 
@@ -343,8 +324,8 @@ def lignum_turtle(g):
 
         if n.label == 'TreeSegment':
             turtle.setColor(COLOR_SEGMENT)
-            radius = float(n.attributes['LGAR'])
-            length = float(n.attributes['LGAL'])
+            radius = float(n.LGAR)
+            length = float(n.LGAL)
             position = Vector3(map(float,n.point.split()))
             direction = Vector3(map(float,n.direction.split()))
 
@@ -360,13 +341,13 @@ def lignum_turtle(g):
             setDir(direction)
             turtle.customGeometry(BUD_GEOM)
         elif n.label == 'BroadLeaf':
-            petiol_start = Vector3(map(float,n.attributes['PetioleStart'].split()))
-            petiol_end = Vector3(map(float,n.attributes['PetioleEnd'].split()))
-            leaf_normal = Vector3(map(float,n.attributes['LeafNormal'].split()))
-            xdir = Vector3(map(float,n.attributes['xdir'].split()))
-            ydir = Vector3(map(float,n.attributes['ydir'].split()))
-            xsize = float(n.attributes['EllipseSMajorA'])
-            ysize = float(n.attributes['EllipseSMinorA'])
+            petiol_start = Vector3(map(float,n.PetioleStart.split()))
+            petiol_end = Vector3(map(float,n.PetioleEnd.split()))
+            leaf_normal = Vector3(map(float,n.LeafNormal.split()))
+            xdir = Vector3(map(float,n.xdir.split()))
+            ydir = Vector3(map(float,n.ydir.split()))
+            xsize = float(n.EllipseSMajorA)
+            ysize = float(n.EllipseSMinorA)
 
             # petiol
             turtle.setColor(COLOR_SEGMENT)

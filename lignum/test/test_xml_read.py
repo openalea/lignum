@@ -1,10 +1,4 @@
-#X from openalea.mtg import MTG
-#X import xml.etree.ElementTree as xml
-#X 
-#X fn = r'C-SugarMaple.xml'
-#X doc = xml.parse(fn)
-#X root = doc.getroot()
-
+# Test convert Lignum XML to MTG and 3D representation
 from lignum.io import *
 
 def test1():
