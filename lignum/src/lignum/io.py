@@ -9,11 +9,15 @@ import xml.etree.ElementTree as xml
 
 #from openalea.core.graph.property_graph import PropertyGraph
 from openalea.mtg import MTG, fat_mtg, turtle as mtg_turtle
+from openalea.mtg import traversal
 import openalea.plantgl.all as pgl
 Vector3 = pgl.Vector3
 
 
 class Parser(object):
+    """ Read an XML file an convert it into an MTG.
+
+    """
 
     def parse(self, fn):
         self.trash = []
@@ -195,36 +199,176 @@ class Parser(object):
 ##########################################################################
 
 class Dumper(object):
+    """ Convert an MTG into the LIGNUM XML format 
+
+    """
 
     def dump(self, graph):
-        self._graph = graph
-        self.graph()
-        return xml.tostring(self.doc)
+        self._g = graph
+        self.mtg()
+        
+        return '\n'.join(xml.tostring(tree) for tree in self.trees)
 
     def SubElement(self, *args, **kwds):
         elt = xml.SubElement(*args, **kwds)
         if not elt.text:
-            elt.text = '\n\t'
-        elt.tail = '\n\t'
+            elt.text = '\n'
+        elt.tail = '\n'
         return elt
 
-    def graph(self):
-        self.doc = xml.Element('graph')
-        self.doc.tail = '\n'
-        self.doc.text = '\n\t'
-        # add root
-        root = self._graph.root
-        self.SubElement(self.doc, 'root', dict(root_id=str(root)))
-        # universal types
-        self.universal_node()
-
-        for vid in self._graph.vertices():
-            self.node(vid)
-
-        for eid in self._graph.edges():
-            self.edge(eid)
-
+    def mtg(self):
+        """ Convert the MTG into a XML tree. """
+        g = self._g
+        # Create a DocType at the begining of the file
         
+        # Traverse the MTG
+        self.trees = []
+        self.xml_nodes = {}
+        self.branching_point = {}
+        #self.spaces = 0
+        for tree_id in g.components(g.root):
+            self.Tree(tree_id)
+
+            for vid in traversal.iter_mtg2(g, tree_id):
+                if vid == tree_id: 
+                    continue
+
+                self.process_vertex(vid)
+#X         self.doc = xml.Element('graph')
+#X         self.doc.tail = '\n'
+#X         self.doc.text = '\n\t'
+#X         # add root
+#X         root = self._graph.root
+#X         self.SubElement(self.doc, 'root', dict(root_id=str(root)))
+#X         # universal types
+#X         self.universal_node()
+#X 
+#X         for vid in self._graph.vertices():
+#X             self.node(vid)
+#X 
+#X         for eid in self._graph.edges():
+#X             self.edge(eid)
+
+    def Tree(self, vid):
+        g = self._g
+
+        self.prev_node = tree_node = g.node(vid)
+        props = g.get_vertex_property(vid)
+
+        #self.spaces += 1
+        self.xml_nodes[vid] = tree = xml.Element('Tree')
+        tree.tail = '\n'
+        tree.text = '\n'
+        
+
+        # Extract SegmentType & LeafType
+        if 'SegmentType' in props:
+            tree.attrib['SegmentType'] = props.pop('SegmentType')
+        if 'LeafType' in props:
+            tree.attrib['LeafType'] = props.pop('LeafType')
+
+        # TreeAttributes: point, direction, LGA*
+        ta = self.filter_attributes(props, fields=('point', 'direction'),
+                                    pattern='LGA')
+        self.attributes(tree, 'TreeAttributes', ta)
+        
+        # Tree Parameters : LGP*
+        tp = self.filter_attributes(props, pattern='LGP')
+        self.attributes(tree, 'TreeParameters', tp)
+
+        # TreeFunctions: LGM*
+        tf = self.filter_attributes(props, pattern='LGM')
+        self.attributes(tree, 'TreeFunctions', tf)
+
+        # Manage the recursive structure?
+        self.trees.append(tree)
+
+    def process_vertex(self, vid):
+        g = self._g
+        pid = g.parent(vid)
+        cid = g.complex(vid)
+        edge = g.edge_type(vid)
+        scale = g.scale(vid)
+        bp = self.branching_point
+
+        prev_scale = self.prev_node.scale()
+        if scale > prev_scale:
+            # add simply the node to its complex
+            xml_node = self.xml_nodes[cid]
+            new_elt = self.add_element(xml_node, vid)
+        elif (scale < prev_scale) or (scale == 2):
+            # Add a new axis: test if + or not
+            # if + retrieve the branching point element
+            # else add to the tree
+            if edge == '+':
+                # Create or retrieve the BranchingPoint
+
+                if pid in bp:
+                    xml_node = bp[pid]
+                else:
+                    xml_node = self.xml_nodes[pid]
+                    bp[pid] = bp_node = self.SubElement(xml_node, 'BranchingPoint')
+                    self.SubElement(bp_node, 'BranchingPointAttributes')
+                    xml_node = bp_node
+            else: 
+                xml_node = self.xml_nodes[cid]
+
+            # Add the Axis to the BranchingPoint
+            new_elt = self.add_element(xml_node, vid)
+        elif scale == 3:
+            # Axis which have not been decomposed
+            xml_node = self.xml_nodes[cid]
+            new_elt = self.add_element(xml_node, vid)
+
+        if scale == 3 and edge == '<':
+            axis_id = cid
+            # In this case, we have leaved the Branching
+            # Then a new branching point have to be created on this Axis
+            # at the next ramification
+            if axis_id in bp:
+                del bp[axis_id]
+
+        self.xml_nodes[vid] = new_elt
+        self.prev_node = g.node(vid)
+
+    def add_element(self, xml_node, vid):
+        g = self._g
+        props = g.get_vertex_property(vid)
+        tag = props['label']
+        attrib = {}
+        if tag in ('TreeSegment', 'Bud', 'BroadLeaf'):
+            if 'ObjectIndex' in props:
+                attrib['ObjectIndex'] = props.pop('ObjectIndex')
+            if (tag == 'BroadLeaf') and ('Shape' in props):
+                attrib['Shape'] = props.pop('Shape')
+        # Create the Element
+        new_elt = self.SubElement(xml_node, tag, attrib)
+
+        ta = self.filter_attributes(props, fields=('point', 'direction'),
+                                    pattern='LGA')
+        tag_attrib = props['label']+'Attributes'
+        self.attributes(new_elt, tag_attrib, ta)
+
+        return new_elt
+
+    def attributes(self, node, tag, props, **attrib):
+        #self.spaces += 1
+        ta = self.SubElement(node, tag, attrib)
+        #self.spaces += 1
+        for k, v in props.iteritems():
+            se = xml.SubElement(ta, k)
+            se.text = v
+            se.tail = '\n'
+        #self.spaces-=2
+
+    @staticmethod
+    def filter_attributes(d, fields = [], pattern = 'LG'):
+        attr = {}
+        for k, v in d.iteritems():
+            if k in fields or k.startswith(pattern):
+                attr[k]=v
+        return attr
+
     def universal_node(self):
         # test
         _types = self._graph._types
