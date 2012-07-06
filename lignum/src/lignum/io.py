@@ -5,7 +5,10 @@
 from StringIO import StringIO
 from math import radians
 
+from os import path
+
 import xml.etree.ElementTree as xml
+from tempfile import mkstemp
 
 #from openalea.core.graph.property_graph import PropertyGraph
 from openalea.mtg import MTG, fat_mtg, turtle as mtg_turtle
@@ -344,7 +347,10 @@ class Dumper(object):
         # Create the Element
         new_elt = self.SubElement(xml_node, tag, attrib)
 
-        ta = self.filter_attributes(props, fields=('point', 'direction'),
+        fields = ['point', 'direction']
+        if tag == 'BroadLeaf':
+            fields+= 'SkySectors PetioleStart PetioleEnd LeafNormal xdir ydir EllipseSMajorA EllipseSMinorA RadiationVector'.split()
+        ta = self.filter_attributes(props, fields=fields,
                                     pattern='LGA')
         tag_attrib = props['label']+'Attributes'
         self.attributes(new_elt, tag_attrib, ta)
@@ -524,7 +530,18 @@ def xml2mtg(xml_graph):
     return g
     
 
-def mtg2xml(graph):
+def mtg2xml(graph, xml_file=''):
+    """ 
+    """
     dump = Dumper()
-    return dump.dump(graph)
+    s = dump.dump(graph)
+    
+    if not xml_file:
+        fd, xml_file = mkstemp(suffix='.xml')
+    f = open(xml_file, 'w')
+    f.write(s)
+    f.close()
+    
+    return xml_file
+
 
