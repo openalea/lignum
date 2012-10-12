@@ -229,7 +229,7 @@ class Dumper(object):
         self.xml_nodes = {}
         self.branching_point = {}
         #self.spaces = 0
-        for tree_id in g.components(g.root):
+        for tree_id in g.components_iter(g.root):
             self.Tree(tree_id)
 
             for vid in traversal.iter_mtg2(g, tree_id):
