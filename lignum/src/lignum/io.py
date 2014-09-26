@@ -13,6 +13,8 @@ from tempfile import mkstemp
 #from openalea.core.graph.property_graph import PropertyGraph
 from openalea.mtg import MTG, fat_mtg, turtle as mtg_turtle
 from openalea.mtg import traversal
+from openalea.mtg.plantframe import color as mtg_color
+
 import openalea.plantgl.all as pgl
 Vector3 = pgl.Vector3
 
@@ -440,10 +442,29 @@ class Dumper(object):
 ##########################################################################
 # Turtle function to represent a LIGNUM MTG
 
-def lignum_turtle(g):
+def lignum_turtle(g, cmap='jet', lognorm=False):
     """ Plot in 3D an MTG generated from LIGNUM XML Tree using a turtle.
 
     """
+    import numpy as np
+    def compute_color(g, _cmap, _lognorm):
+        
+        if not 'LGAtype' in g.properties():
+            return g
+        p = g.property('LGAtype')
+        keys = p.keys()
+        vs = p.values()
+        if vs and isinstance(vs [0], str):
+            try:
+                values = np.array(vs,dtype='int')
+            except ValueError:
+                values = np.array(vs,dtype='float')
+
+            g.properties()['LGAtype'] = dict(zip(keys, values))
+
+        mtg_color.colormap(g, 'LGAtype') #, cmap=_cmap, lognorm=_lognorm)
+        return g
+
 
     COLOR_SEGMENT = 1
     COLOR_LEAF = 2
@@ -452,6 +473,8 @@ def lignum_turtle(g):
     BUD_SIZE = 0.01
     BUD_GEOM = pgl.Translated((0,0,BUD_SIZE),
                               pgl.Scaled((1/3.,1/3.,1), pgl.Sphere(radius=BUD_SIZE)))
+
+    g = compute_color(g, _cmap=cmap, _lognorm=lognorm)
 
     # Define the global properties first:
     # Base diameter LGADbase
@@ -511,7 +534,7 @@ def lignum_turtle(g):
             turtle.customGeometry(my_leaf(xsize,ysize))
 
 
-    scene = mtg_turtle.TurtleFrame(g,lignum_visitor,myTurtle)
+    scene = mtg_turtle.TurtleFrame(g,lignum_visitor,myTurtle, all_roots=True, gc=True)
     return scene
 
 
