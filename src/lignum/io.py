@@ -2,15 +2,15 @@
 # XML Lignum reader and writer.
 ##############################################################################
 
-from StringIO import StringIO
-from math import radians
+# from StringIO import StringIO
+# from math import radians
 
-from os import path
+# from os import path
 
 import xml.etree.ElementTree as xml
 from tempfile import mkstemp
 
-#from openalea.core.graph.property_graph import PropertyGraph
+# from openalea.core.graph.property_graph import PropertyGraph
 from openalea.mtg import MTG, fat_mtg, turtle as mtg_turtle
 from openalea.mtg import traversal
 from openalea.mtg.plantframe import color as mtg_color
@@ -29,7 +29,7 @@ class Parser(object):
         self._g = MTG()
 
         # Current proxy node for managing properties
-        self._node = None 
+        self._node = None
 
         doc = xml.parse(fn)
         root = doc.getroot()
@@ -45,9 +45,7 @@ class Parser(object):
             return self.__getattribute__(elt.tag)(elt.getchildren(), **elt.attrib)
         except Exception, e:
             print e
-            raise Exception("Unvalid element %s"%elt.tag)
-            
-
+            raise Exception("Unvalid element %s" % elt.tag)
 
     def Tree(self, elts, **properties):
         """ A Tree with attributes, parameters and a recursive structure.
@@ -85,7 +83,6 @@ class Parser(object):
         self.segments = []
         self.edges = []
 
-    
     def Axis(self, elts):
         """ Create a new axis depending of the branching type
         """
@@ -102,13 +99,13 @@ class Parser(object):
                 self.axes[-1] = new_axis
 
         self._node = g.node(self.axes[-1])
-        
+
         # Recursive structure
         for elt in elts:
             self.dispatch(elt)
-        
+
         # end of the recursion
-        
+
         if edge_type == '+':
             self.axes.pop()
             self.segments = self.segments[:len(self.axes)]
@@ -121,12 +118,11 @@ class Parser(object):
 
     def BranchingPoint(self, elts):
         """ Define a branching point. """
-        g = self._g
         self.edges.append('+')
 
         for elt in elts:
             self.dispatch(elt)
-        
+
         self.edges.pop()
 
     def BranchingPointAttributes(self, elts):
@@ -138,13 +134,12 @@ class Parser(object):
         """ Add a bud at the same scale at the end of an Axis. """
         self.internode(elts, label='Bud', **props)
 
-
     def BroadLeaf(self, elts, **props):
         """ Add a BroadLeaf to a TreeSegment """
         g = self._g
         parent = self.segments[-1]
-        leaf = g.add_child(parent, edge_type='+', 
-                           label='BroadLeaf',**props)
+        leaf = g.add_child(parent, edge_type='+',
+                           label='BroadLeaf', **props)
         self._node = g.node(leaf)
         for elt in elts:
             self.dispatch(elt)
@@ -157,27 +152,27 @@ class Parser(object):
         g = self._g
         edge_type = self.edges[-1]
         complex_axis = self.axes[-1]
-        
+
         if not self.segments:
             new_segment = g.add_component(complex_axis, label=label, **props)
             self.segments.append(new_segment)
         else:
             parent = self.segments[-1]
             # There is A BUG in add_child and complex with an existing complex!!!!
-            
+
             if g.complex(parent) != complex_axis:
                 new_segment = g.add_component(complex_axis)
                 new_segment = g.add_child(parent, child=new_segment,
                                           edge_type=edge_type, label=label,
                                           **props)
             else:
-                new_segment = g.add_child(parent, 
+                new_segment = g.add_child(parent,
                                           edge_type=edge_type, label=label,
                                           **props)
 
             if edge_type == '+':
                 self.segments.append(new_segment)
-            else: 
+            else:
                 self.segments[-1] = new_segment
 
         self._node = g.node(self.segments[-1])
@@ -185,12 +180,12 @@ class Parser(object):
         # Property management
         for elt in elts:
             self.dispatch(elt)
-        
+
         # The first segment is '+'. Others are < until the next branching point.
         if edge_type == '+':
             self.edges[-1] = '<'
 
-    def update_attributes(self, elts) :
+    def update_attributes(self, elts):
         """ Update the properties in the MTG """
         proxy_node = self._node
         for a in elts:
@@ -201,17 +196,18 @@ class Parser(object):
     TreeSegmentAttributes = update_attributes
     BroadLeafAttributes = BudAttributes = TreeSegmentAttributes
 
+
 ##########################################################################
 
 class Dumper(object):
-    """ Convert an MTG into the LIGNUM XML format 
+    """ Convert an MTG into the LIGNUM XML format
 
     """
 
     def dump(self, graph):
         self._g = graph
         self.mtg()
-        
+
         return '\n'.join(xml.tostring(tree) for tree in self.trees)
 
     def SubElement(self, *args, **kwds):
@@ -225,34 +221,34 @@ class Dumper(object):
         """ Convert the MTG into a XML tree. """
         g = self._g
         # Create a DocType at the begining of the file
-        
+
         # Traverse the MTG
         self.trees = []
         self.xml_nodes = {}
         self.branching_point = {}
-        #self.spaces = 0
+        # self.spaces = 0
         for tree_id in g.components_iter(g.root):
             self.Tree(tree_id)
 
             for vid in traversal.iter_mtg2(g, tree_id):
-                if vid == tree_id: 
+                if vid == tree_id:
                     continue
 
                 self.process_vertex(vid)
-#X         self.doc = xml.Element('graph')
-#X         self.doc.tail = '\n'
-#X         self.doc.text = '\n\t'
-#X         # add root
-#X         root = self._graph.root
-#X         self.SubElement(self.doc, 'root', dict(root_id=str(root)))
-#X         # universal types
-#X         self.universal_node()
-#X 
-#X         for vid in self._graph.vertices():
-#X             self.node(vid)
-#X 
-#X         for eid in self._graph.edges():
-#X             self.edge(eid)
+# X         self.doc = xml.Element('graph')
+# X         self.doc.tail = '\n'
+# X         self.doc.text = '\n\t'
+# X         # add root
+# X         root = self._graph.root
+# X         self.SubElement(self.doc, 'root', dict(root_id=str(root)))
+# X         # universal types
+# X         self.universal_node()
+# X
+# X         for vid in self._graph.vertices():
+# X             self.node(vid)
+# X
+# X         for eid in self._graph.edges():
+# X             self.edge(eid)
 
     def Tree(self, vid):
         g = self._g
@@ -260,11 +256,10 @@ class Dumper(object):
         self.prev_node = tree_node = g.node(vid)
         props = g.get_vertex_property(vid)
 
-        #self.spaces += 1
+        # self.spaces += 1
         self.xml_nodes[vid] = tree = xml.Element('Tree')
         tree.tail = '\n'
         tree.text = '\n'
-        
 
         # Extract SegmentType & LeafType
         if 'SegmentType' in props:
@@ -276,7 +271,7 @@ class Dumper(object):
         ta = self.filter_attributes(props, fields=('point', 'direction'),
                                     pattern='LGA')
         self.attributes(tree, 'TreeAttributes', ta)
-        
+
         # Tree Parameters : LGP*
         tp = self.filter_attributes(props, pattern='LGP')
         self.attributes(tree, 'TreeParameters', tp)
@@ -315,7 +310,7 @@ class Dumper(object):
                     bp[pid] = bp_node = self.SubElement(xml_node, 'BranchingPoint')
                     self.SubElement(bp_node, 'BranchingPointAttributes')
                     xml_node = bp_node
-            else: 
+            else:
                 xml_node = self.xml_nodes[cid]
 
             # Add the Axis to the BranchingPoint
@@ -351,36 +346,36 @@ class Dumper(object):
 
         fields = ['point', 'direction']
         if tag == 'BroadLeaf':
-            fields+= 'SkySectors PetioleStart PetioleEnd LeafNormal xdir ydir EllipseSMajorA EllipseSMinorA RadiationVector'.split()
+            fields += 'SkySectors PetioleStart PetioleEnd LeafNormal xdir ydir EllipseSMajorA EllipseSMinorA RadiationVector'.split()
         ta = self.filter_attributes(props, fields=fields,
                                     pattern='LGA')
-        tag_attrib = props['label']+'Attributes'
+        tag_attrib = props['label'] + 'Attributes'
         self.attributes(new_elt, tag_attrib, ta)
 
         return new_elt
 
     def attributes(self, node, tag, props, **attrib):
-        #self.spaces += 1
+        # self.spaces += 1
         ta = self.SubElement(node, tag, attrib)
-        #self.spaces += 1
+        # self.spaces += 1
         for k, v in props.iteritems():
             se = xml.SubElement(ta, k)
             se.text = v
             se.tail = '\n'
-        #self.spaces-=2
+        # self.spaces-=2
 
     @staticmethod
-    def filter_attributes(d, fields = [], pattern = 'LG'):
+    def filter_attributes(d, fields=[], pattern='LG'):
         attr = {}
         for k, v in d.iteritems():
             if k in fields or k.startswith(pattern):
-                attr[k]=v
+                attr[k] = v
         return attr
 
     def universal_node(self):
         # test
         _types = self._graph._types
-        #_types['Boid']=['sphere']
+        # _types['Boid']=['sphere']
         attrib = {}
         if _types:
             for t, extends in _types.iteritems():
@@ -410,20 +405,20 @@ class Dumper(object):
         if not g.vertex_property('geometry').get(vid):
             t = g.vertex_property('transform').get(vid)
             if t:
-                transfo = self.SubElement(node, 
-                    'property', 
-                    {'name':'transform'})
+                transfo = self.SubElement(node,
+                                          'property',
+                                          {'name':'transform'})
                 matrix = self.SubElement(transfo, 'matrix')
                 s='\n'
                 for i in range(4):
                     c = tuple(t.getRow(i))
                     s += '\t\t\t%.5f %.5f %.5f %.5f\n'%c
-                matrix.text = s+'\n' 
+                matrix.text = s+'\n'
 
         for (name, value) in properties.get(vid,[]).iteritems():
             attrib = {'name':name, 'value':str(value)}
             self.SubElement(node, 'property', attrib)
-        
+
     def edge(self, eid):
         edge_type_conv = {}
         edge_type_conv['<'] = 'successor'
@@ -442,13 +437,13 @@ class Dumper(object):
 ##########################################################################
 # Turtle function to represent a LIGNUM MTG
 
-def lignum_turtle(g, cmap='jet', lognorm=False):
+def lignum_turtle(g, property_name='LGAtype', cmap='jet', lognorm=False, has_color=False):
     """ Plot in 3D an MTG generated from LIGNUM XML Tree using a turtle.
 
     """
     import numpy as np
     def compute_color(g, _cmap, _lognorm):
-        
+
         if not 'LGAtype' in g.properties():
             return g
         p = g.property('LGAtype')
@@ -462,7 +457,7 @@ def lignum_turtle(g, cmap='jet', lognorm=False):
 
             g.properties()['LGAtype'] = dict(zip(keys, values))
 
-        mtg_color.colormap(g, 'LGAtype') #, cmap=_cmap, lognorm=_lognorm)
+        mtg_color.colormap(g, 'LGAtype', cmap=_cmap, lognorm=_lognorm)
         return g
 
 
@@ -474,7 +469,8 @@ def lignum_turtle(g, cmap='jet', lognorm=False):
     BUD_GEOM = pgl.Translated((0,0,BUD_SIZE),
                               pgl.Scaled((1/3.,1/3.,1), pgl.Sphere(radius=BUD_SIZE)))
 
-    g = compute_color(g, _cmap=cmap, _lognorm=lognorm)
+    if not has_color:
+        g = compute_color(g, _cmap=cmap, _lognorm=lognorm)
 
     # Define the global properties first:
     # Base diameter LGADbase
@@ -483,10 +479,11 @@ def lignum_turtle(g, cmap='jet', lognorm=False):
 
     myTurtle = pgl.PglTurtle()
     myTurtle.move(position)
-    
+
     def lignum_visitor(g, v, turtle):
         n = g.node(v)
         turtle.setId(v)
+        radius_factor = 1. if not g.parent(v) else 1.5
 
         def my_leaf(xs, ys):
             return pgl.Translated((xs/2,0,0),
@@ -504,8 +501,15 @@ def lignum_turtle(g, cmap='jet', lognorm=False):
 
             turtle.move(position)
             turtle.setWidth(radius)
+
+            if n.parent() is None:
+                turtle.customGeometry(pgl.Disc(radius))
+
             setDir(direction)
             turtle.F(length)
+            if n.parent() is None:
+                turtle.customGeometry(pgl.Disc(radius))
+
         elif n.label == 'Bud':
             turtle.setColor(COLOR_BUD)
             position = Vector3(map(float,n.point.split()))
@@ -534,7 +538,7 @@ def lignum_turtle(g, cmap='jet', lognorm=False):
             turtle.customGeometry(my_leaf(xsize,ysize))
 
 
-    scene = mtg_turtle.TurtleFrame(g,lignum_visitor,myTurtle, all_roots=True, gc=True)
+    scene = mtg_turtle.TurtleFrame(g,lignum_visitor,myTurtle, all_roots=True, gc=False)
     return scene
 
 
@@ -551,20 +555,20 @@ def xml2mtg(xml_graph):
     g = parser.parse(f)
     #f.close()
     return g
-    
+
 
 def mtg2xml(graph, xml_file=''):
-    """ 
+    """
     """
     dump = Dumper()
     s = dump.dump(graph)
-    
+
     if not xml_file:
         fd, xml_file = mkstemp(suffix='.xml')
     f = open(xml_file, 'w')
     f.write(s)
     f.close()
-    
+
     return xml_file
 
 
