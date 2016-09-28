@@ -19,7 +19,6 @@ requirements:
     - setuptools
     - openalea.mtg
     - vplants.plantgl
-    - numpy x.x
 
 test:
   imports:
