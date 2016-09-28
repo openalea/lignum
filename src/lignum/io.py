@@ -483,6 +483,7 @@ def lignum_turtle(g, property_name='LGAtype', cmap='jet', lognorm=False, has_col
     def lignum_visitor(g, v, turtle):
         n = g.node(v)
         turtle.setId(v)
+        radius_factor = 1. if not g.parent(v) else 1.5
 
         def my_leaf(xs, ys):
             return pgl.Translated((xs/2,0,0),
@@ -500,8 +501,14 @@ def lignum_turtle(g, property_name='LGAtype', cmap='jet', lognorm=False, has_col
 
             turtle.move(position)
             turtle.setWidth(radius)
+
+            if n.parent() is None:
+                turtle.customGeometry(pgl.Disc(radius))
+
             setDir(direction)
             turtle.F(length)
+            if n.parent() is None:
+                turtle.customGeometry(pgl.Disc(radius))
 
         elif n.label == 'Bud':
             turtle.setColor(COLOR_BUD)
@@ -531,7 +538,7 @@ def lignum_turtle(g, property_name='LGAtype', cmap='jet', lognorm=False, has_col
             turtle.customGeometry(my_leaf(xsize,ysize))
 
 
-    scene = mtg_turtle.TurtleFrame(g,lignum_visitor,myTurtle, all_roots=True, gc=True)
+    scene = mtg_turtle.TurtleFrame(g,lignum_visitor,myTurtle, all_roots=True, gc=False)
     return scene
 
 
