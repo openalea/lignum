@@ -1,12 +1,16 @@
+{% set version = "1.4.1" %}
+
 package:
   name: openalea.lignum
-  version: 1.4.0
+  version: {{ version }}
 
 source:
-  git_url: https://github.com/pradal/lignum
-
+  #git_url: https://github.com/pradal/lignum
+  path: ..
+  script: python setup.py install
 
 build:
+  number: 0
   preserve_egg_dir: True
 
 requirements:
@@ -26,4 +30,5 @@ test:
 
 about:
   home: http://github.com/pradal/lignum
-  license: Cecill-C License
+  license: Cecill-C
+  summary: OpenAlea.Lignum is a bridge between the LIGNUM FSPM simulation platform and OpenAlea.
