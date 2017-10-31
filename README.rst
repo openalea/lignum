@@ -1,4 +1,5 @@
-====== Alinea.LIGNUM ======
+OpenAlea.Lignum
+================
 
 **Authors** : XXX
 
@@ -10,46 +11,46 @@
 
 **URL** : http://openalea.gforge.inria.fr
 
-===== About =====
+About 
+-----
 
-=== Description ===
+Description
+&&&&&&&&&&&
 
 Alinea.LIGNUM is a XXX
 
 
 
-=== Content ===
+Content 
+&&&&&&&
 
 The Alinea.LIGNUM package contains :
 
 
-===== Installation =====
+Installation
+------------
 
-=== Download ===
+Download
+&&&&&&&&&
 
-Go to http://gforge.inria.fr/frs/?group_id=79
-
-=== Requirements ===
-
-* Scons >= 0.96.93
-* SconsX
-* OpenAlea.Deploy
-* Boost.Python
+The code is available on github: https://github.com/openalea/lignum
 
 
-=== Installation ===
+Installation
+&&&&&&&&&&&&&
+
+.. code :: bash
+  conda install -c openalea openalea.lignum
 
 
-=== Utilisation ===
+Utilisation
+&&&&&&&&&&&&
+
+.. code :: bash
+  python setup.py install
 
 
-<code>
-python setup.py install
-</code>
-
-
-
-===== Documentation =====
-
-http://openalea.gforge.inria.fr/doc/alinea/lignum/doc/_build/html/contents.html
+Documentation
+--------------
+.. todo:: readthedoc
 
